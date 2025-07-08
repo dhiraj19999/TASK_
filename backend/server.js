@@ -12,8 +12,19 @@ const app = express();
 // Connect to MongoDB
 connectDB();
 
+// CORS setup
+const allowedOrigins = [
+  "https://client-j05stbrie-dhiraj19999s-projects.vercel.app",
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Routes
@@ -24,4 +35,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
- 
+

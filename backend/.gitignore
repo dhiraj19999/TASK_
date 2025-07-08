@@ -1,0 +1,61 @@
+
+# -----------------
+# General
+# -----------------
+node_modules/
+.env
+.env.local
+.DS_Store
+*.log
+npm-debug.log*
+
+# -----------------
+# Build Files
+# -----------------
+build/
+dist/
+
+# -----------------
+# VS Code
+# -----------------
+.vscode/
+
+# -----------------
+# Logs
+# -----------------
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------
+# Frontend (React)
+# -----------------
+frontend/node_modules/
+frontend/build/
+
+# -----------------
+# Backend (Express)
+# -----------------
+backend/node_modules/
+backend/.env
+backend/logs/
+
+# -----------------
+# OS generated
+# -----------------
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# -----------------
+# Vercel/Render
+# -----------------
+.vercel/
+.render/
+
+# -----------------
+# Optional Git folders
+# -----------------
+.git/
